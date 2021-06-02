@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="7dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="7dp"
+    android:background="@drawable/edit_profile_rounded_corners"
+    android:padding="8dp">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivMark"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        tools:srcCompat="@drawable/ic_incoming_uncheck" />
+
+    <TextView
+        android:id="@+id/tvFavourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/ivMark"
+        android:text="Your Favourite Chingari stars"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/tvMess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFavourite"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/ivMark"
+        android:alpha="0.5"
+        android:lineSpacingExtra="2sp"
+        android:text="See Chingari stars you are following on outgoing calls"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:translationY="-0.97sp" />
+</RelativeLayout>
+
